@@ -1,0 +1,34 @@
+
+
+					Mini projet 
+
+    Créer une bibliothèque (statique ou dynamique) qui va contenir la gestion d'une hashmap.
+Cette bibliothèque doit avoir les caractéristiques suivantes : 
+
+
+	
+compilation via un makefile + fichers .h
+	
+structures de données à définir (String, Struct KDA, ...)
+	
+en interne la hashmap doit avoir un ABR pour stocker les données (type ???) et également une valeur pour stocker le nb d'entrées de la hashmap (type HashMap)
+	
+chaque noeud de l'ABR doit avoir une liste chainee (ou file / pile pour optimiser le temps d'ajout) pour stocker les couples "clé/valeur"
+	
+elle doit fournir une fonction pour ajouter un couple  int addHM(  Hashmap* map, char* key, ???* value); qui retourne un booléen pour indiquer si l'ajout a fonctionné ou non
+	
+une fonction pour rechercher une clé et récupérer la valeur  ???* getHM( Hashmap* map, char* key ); qui va retourn un pointeur sur la valeur trouvée
+	
+une fonction pour enlever une clé int removeHM( Hashmap* map, char* key); qui retourne un booléen pour dire si la suppression a fonctionné
+	
+il faut une fonction pour récupérer la taille de la hashmap int sizeHM( Hashmap* map );
+	
+une fonction update qui va mettre a jour la valeur associée à la clé si la clé existe int addHM(  Hashmap* map, char* key, ???* value); qui retourne un booléen.
+	
+Une fonction pour afficher toute la hashmap (parcours comme vous voulez prefixe infixe suffixe) qui affiche le noeud (h) et la liste des clés valeurs associée void display(HashMap* map);
+	
+Essayez de limiter la consommation mémoire de votre application
+	
+Votre main qui teste la hashmap doit remplir la structure, la modifier, supprimer des elements, ... et afficher des resultats intermédiaires. A la fin l'ensemble de la hashmap doit etre vidée et la mémoire libérée avant la fin du programme main
+	
+partagez vos libs avec vos voisins pour les tester
